@@ -1,0 +1,264 @@
+:root{
+    --color-primary: gold;
+    --color-secondary: red;
+    --color-accent: black;
+    --color-body: #ccc;
+    --border-radius: 30px;
+
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+/* Typography */
+html{
+    font-size: 13px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h4{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 1rem;
+}
+
+
+/* Page Map*/
+.page--map{
+    margin-bottom: 0;
+}
+
+/* checkout bar */
+.checkout--bar{
+    width: 100%;
+    border-top: 4px solid var(--color-primary);
+    background:var(--color-body);
+}
+
+.checkout--bar >p{
+    font-size: 1rem;
+}
+.checkout--bar_icon{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: .5rem;
+}
+.checkout--bar>a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.checkout--bar>a:hover{
+    color: var(--color-primary);
+    transition: .4s;
+}
+/* check out grid */
+.checkout-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto) ;
+    align-items: start;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.checkout--form{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+
+
+
+/* Checkout Form */
+
+.checkout--form{
+    margin: 1rem ;
+}
+
+.checkout--form >h1{
+    font-size: 3rem;
+    margin-left: 1rem;
+    border-bottom: 1px solid var(--color-body);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.form--style{
+    padding: 1rem;
+    border: 1px solid var(--color-body);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+   
+}
+
+.star-yellow{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+label{
+    display: block;
+    
+}
+
+.country__select{
+    padding: 1rem ;
+    width: 100%;
+    border: 1px solid var(--color-body);
+    border-radius: 10px;
+}
+
+.input-grid_2x1{
+   display: grid;
+   grid-template-columns:repeat(2 , 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   gap: 4rem;
+    
+}
+
+.form-check-label{
+    display: inline;
+}
+
+.second--title{
+    border-bottom: 1px solid var(--color-body);
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+
+.second--title>h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.second--title>input{
+    margin-left: 3rem;
+}
+
+
+/* Checkout card */
+
+.checkout--card{
+    border: 1px solid var(--color-body);
+    background: var(--color-body);
+    margin: 1rem;
+}
+
+.checkout--card_header{
+    border-bottom: 1px solid rgb(160, 157, 157);
+    margin: 2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.checkout--card_table_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    border-bottom: 1px solid #a09d9d ;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin:  2rem;
+    margin-top: -1.5rem;
+    
+  }
+
+   tr,td {
+    border: none;
+    border-bottom: 2px solid black ; /* Add a light gray bottom border to each table cell */
+    font-size: 1rem;
+    padding: .7rem 0;
+    font-weight: normal;
+    
+    
+  }
+
+  th{
+    border-bottom: 1px solid #a09d9d;
+    margin: 1rem ;
+    padding: 1rem 0;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  .table__header{
+    border-bottom: 1px solid #a09d9d;
+  }
+
+  .table__subtotal{
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+
+  .table__total>td,tr{
+    border-bottom: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .bank--transfer{
+    margin-left: 1rem ;
+    margin-right: .5rem;
+  }
+
+  .bank--transfer>h4{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .bank--transfer>p{
+    margin: .5rem 1rem;
+    font-size: 1.2rem;
+    opacity: .8;
+    
+  }
+
+  /* Checkout button */
+.checkout--button{
+    background-color: black;
+    margin:  2rem;
+    border-radius: 0;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    
+}
+
+.checkout--button:hover{
+    background: #303131;
+}
+
+
+
+
+  

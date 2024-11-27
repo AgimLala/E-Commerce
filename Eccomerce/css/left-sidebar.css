@@ -1,0 +1,131 @@
+:root{
+    --color-primary: gold;
+    --color-secondary: red;
+    --color-accent: black;
+    --color-body: #ccc;
+    --border-radius: 30px;
+
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+
+
+
+.default--sorting{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) ;
+    margin: 1rem ;
+    
+    
+
+}
+
+.card--type3{
+    width: 95%;
+
+}
+
+.card--3_content{
+    margin-right: 3rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.deleted__price{
+    margin: 0;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.star-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card--type3>img{
+    margin: 0;
+   margin-left: 1rem;
+}
+
+.sorting--navigator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2.3rem;
+}
+
+.page--number-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 1.5rem;
+    position: relative;
+      
+}
+a{
+    color: black;
+}
+a:hover{
+    color: var(--color-primary);
+    transition: .4s;
+}
+
+  
+
+
+.page--number-items{
+    padding: 0;
+    margin: 0;
+   
+    
+}
+
+.page--number{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.number__bar{
+    border: 2px solid var(--color-primary);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.page--number-item{
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  .page--number-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1.5px;
+    background-color: gold;
+    top: 0;
+    right: -25px;}
+
+    .page--number-item:hover{
+        color: var(--color-primary);
+    }

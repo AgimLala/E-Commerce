@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+
+  
+  <header>
+    <nav class="nav first--navigation">
+      <p class="nav__description">free shipping for all orders of <b>$200</b> </p>
+      <ul class="list nav__list">
+        <li class="nav__item"><a href="#">My account</a></li>
+        <li class="nav__item"><a href="Cart.html"> Cart</a></li>
+        <li class="nav__item"><a href="Wishlist.html"> wishlist</a></li>
+        <li class="nav__item"><a href="checkout.html"> checkout</a></li>
+      </ul>
+    </nav>
+    <!-- User help -->
+    <div class="user--help">
+      <div class="media">
+        <div class="media__image"><img  src="images/icons/phone.png" alt=""></div>
+        <div class="media__body">
+          <h3>Need help?</h3>
+          <p>(+123) 123 321 345</p>
+        </div>
+      </div>
+      <div class="input-group search--input">
+        <input type="text" placeholder="Search Product">
+        <span class="icon"><img src="images/icons/refresh (5).png" alt=""></span>
+      </div>
+      <a href="#"><img class="small--icon" src="images/icons/heart.png" alt=""></a>
+      <a href="#"><img class="small--icon" src="images/icons/bag.png" alt=""></a>
+      <p>$54.00</p>
+    </div>
+    <!-- Page Navigator -->
+    <section class="page--navigator">
+    
+      <div class="media page--home">
+        <div class="media__image">
+          <img class="end--icon" src="images/icons/hamburger.png" alt="" />
+        </div>
+        <div class="page--home_body">
+          <h3>All Department</h3>
+        </div>
+      </div>
+      <ul class="page--menu">
+        <li class="page__links ">
+          <a  href="E-Commerce.html"
+            >HOME
+            <img
+              class="small--icon"
+              src="images/icons/arrow.downwards.png"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="page__links">
+          <a href="shop-left-sidebar.html"
+            >SHOP
+            <img
+              class="small--icon"
+              src="images/icons/arrow.downwards.png"
+              alt=""
+          /></a>
+        </li>
+        <li class="page__links">
+          <a href="#"
+            >BLOG
+            <img
+              class="small--icon"
+              src="images/icons/arrow.downwards.png"
+              alt=""
+          /></a>
+        </li>
+        <li class="page__links">
+          <a href="#"
+            >PAGES
+            <img
+              class="small--icon"
+              src="images/icons/arrow.downwards.png"
+              alt=""
+          /></a>
+        </li>
+        <li class="page__links"><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="user--login">
+    <h3 ><a href="#">login</a></h3>
+    <p>or</p>
+    <h3><a href="">register</a></h3>
+    </div>
+    
+      </section>
+  </header>
+
+  <body>    
+    
+    <div class="page--map">
+        <h4>Home > Cart </h4>
+    </div>
+
+    <table>
+      <thead>  
+          <tr>
+              <th>Remove</th>
+              <th>Images</th>
+              <th>Product</th>
+              <th>Unit Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+          </tr>
+      </thead>
+      <tbody id="cart-items">
+          <!-- Cart items will be inserted here dynamically -->
+      </tbody>
+  </table>
+
+    <div class="cart-coupon-update">
+       
+        <div class="coupon">
+            <input class="coupon__code" type="text" placeholder="Coupon Code" maxlength="15" >
+           <div class="btn coupon__button"> apply code </div>
+           </div>
+
+           <div class="update ">
+           <div class="btn coupon__button update-cart ">update cart</div>
+           </div>
+
+    </div>
+
+    <div class="cart--total">
+    <h3>Cart Totals</h3>
+    <div class="cart__subtotal">
+        <h4>Subtotal</h4>
+        <h4 class="Cart-subtotal" id="cart-subtotal">$0.00</h4>
+    </div>
+    <div class="cart__total">
+        <h4>Total</h4>
+        <h4 id="cart-total">$0.00</h4>
+    </div>
+</div>
+
+    </div>
+    <a href="checkout.html" id="proceed-to-checkout">
+        <div class="btn proceed--button">Proceed to checkout</div>
+    </a>
+
+    <nav class="nav second--navigation">
+        <div class="nav__icon">
+          <img class="icon navigation__icon" src="images/icons/telegram.png" alt="">
+          <p class="nav__description"><b> Subscribe newsletter and get discount <b></p>
+        </div>
+        <div class="input--group">
+          <input type="text" id="subscribe-email" class="input input__subscribe" placeholder="Enter Email Address" />
+          <button class="btn btn--accent btn--subscribe" id="subscribe-button">Subscribe</button>
+      </div>
+      
+        
+        </nav>
+
+
+
+      
+  </body>
+
+  <script src="Javascript/cart.js"></script>
+  <script src="Javascript/subscribe.js"></script>
+
+
+  <footer>
+  
+    <section class="footer--grid">
+      <!-- CONTACT US -->
+    
+    <ul class="contact--us">
+    <h3>Contact us</h3>
+    <li class="home">
+    <div class="footer--media">
+    <div class="footer--media_image"><img class="small--icon " src="images/icons/home.png" alt=""></div>
+    <div class="footer--media_body">
+      <p>45 Grand Central New York NY</p>
+      <p>1017 United States USA</p>
+    </div>
+    </div>
+    </li>
+    <li class="email">
+    <div class="footer--media">
+    <div class="footer--media_image"><img class="small--icon " src="images/icons/email.png" alt=""></div>
+    <div class="footer--media_body">
+    <p>Email: info@yourdomain.com</p>
+    </div>
+    </div>
+    </li>
+    <li class="email">
+    <div class="footer--media">
+    <div class="footer--media_image"><img class="small--icon " src="images/icons/phone.black.png" alt=""></div>
+    <div class="footer--media_body">
+    <p>Phone: (+123) 123 321 345</p>
+    </div>
+    </div>
+    </li>
+    <li class="email">
+    <div class="footer--media">
+    <div class="footer--media_image"><img class="small--icon " src="images/icons/fax-machine.png" alt=""></div>
+    <div class="footer--media_body">
+    <p>Fax: (+321) 543 123 321 </p>
+    </div>
+    </div>
+    </li>
+    <li class="home">
+    <div class="footer--media">
+    <div class="footer--media_image"><img class="small--icon " src="images/icons/calendar.png" alt=""></div>
+    <div class="footer--media_body">
+    <p>Mon-Sat 9:00pm - 5:00pm.</p>
+    <p>Sun: Closed</p>
+    </div>
+    </div>
+    </li>
+    
+    
+    
+    </ul>
+    
+    <!-- Information & About Us -->
+    <ul class="footer--list">
+    <h3>Information</h3>
+    <li class="information__list"><a href="#">Contact Us</a></li>
+    <li class="information__list"><a href="#">About Us</a></li>
+    <li class="information__list"><a href="#">Privacy Policy</a></li>
+    <li class="information__list"><a href="#">Costumer Service</a></li>
+    <li class="information__list"><a href="#">Frequently questions</a></li>
+    <li class="information__list"><a href="#">Delivery Information</a></li>
+    </ul>
+    
+    <ul class="footer--list">
+    <h3>About Us</h3>
+    <li class="information__list"><a href="#">Cart</a></li>
+    <li class="information__list"><a href="#">Wishlist</a></li>
+    <li class="information__list"><a href="checkout.html">Checkout</a></li>
+    <li class="information__list"><a href="#">FAQ</a></li>
+    <li class="information__list"><a href="#">My account</a></li>
+    <li class="information__list"><a href="#">Privacy Policy</a></li>
+    </ul>
+    
+    
+    <!-- Latest tweet -->
+    <div class="footer--list latest--tweet">
+    <h3>Latest tweet</h3>
+    <p>Packed with ideas, inspiration, 
+      and just a few pictures of cute cats, it cant be hard to stand out in a sea of graphics 
+      on <a class="link__blue" href="#"> @Pinterest</a> . 
+      Which is why we're here to help with those awsome templates. 
+      <a class="link__blue" href="#"> enva.to/r6</a> </p>
+    <p>Sep 20 reply retweet favorite 1 years ago</p>
+    </div>
+    </section>
+    <div class="page--end">
+      <div class="copyright">
+         <p> Copyright &copy; 2019 All rights reserved</p>
+         <div class="footer--end_icon">
+           <img class="end--icon" src="images/icons/facebook.png" alt="">
+           <img class="end--icon" src="images/icons/twitter.png" alt="">
+           <img class="end--icon" src="images/icons/instagram.png" alt="">
+           <img class="end--icon" src="images/icons/linkedin.png" alt="">
+           <img class="end--icon" src="images/icons/signal.png" alt="">
+         </div>
+     </div>
+    
+       <div class="copyright">
+         <p>Allow payments base on </p>
+         <img src="images/footer/payment/1.png" alt="">
+    
+      </div>
+    </div>
+  </footer>
+  
+</html>

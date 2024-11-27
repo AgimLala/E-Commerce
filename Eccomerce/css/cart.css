@@ -1,0 +1,154 @@
+:root{
+    --color-primary: gold;
+    --color-secondary: red;
+    --color-accent: black;
+    --color-body: #ccc;
+    --border-radius: 30px;
+
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin:1rem; 
+    margin-right: 5rem;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    width: auto;
+  }
+  th{
+    font-weight: normal;
+    height: 10%;
+  }
+
+  label{
+    display: block;
+  }
+
+  .table__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .number__box{
+    width: 4rem;
+  }
+
+  td>img{
+    margin: 1rem;
+    max-width: 90%;
+    
+  }
+  
+.cart_item_image{
+  max-width: 90%;
+  max-height: 30%;
+  margin: 0;
+}
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 8%;
+   
+  }
+  
+  th:nth-child(2), td:nth-child(2) {
+    width: 25%;
+  }
+  
+  th:nth-child(3), td:nth-child(3) {
+    width: 30%;
+    
+  }
+  th:nth-child(4), td:nth-child(4) {
+  width: 10%;
+    
+  }
+  th:nth-child(5), td:nth-child(5) {
+    width: 10%;
+  }
+  th:nth-child(6), td:nth-child(6) {
+    width: 10%;
+    
+  }
+
+ 
+  /* coupon-update */
+
+   .cart-coupon-update{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+   }
+
+   .coupon{
+    margin-left: 1rem;
+    display: flex;
+    
+  }
+
+  .coupon__code{
+    width: 10rem;
+    border: 1px solid var(--color-body);
+    height: 3rem;
+  }
+
+  .coupon__button{
+        background-color: black;
+        margin-left: .5rem;
+        margin-right: 1rem;
+        border-radius: 1px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: .4rem 1rem;
+        
+    }
+    
+    .coupon__button:hover{
+        background: #303131;
+    }
+  
+    /* total */
+    .cart--total{
+        margin-left: 1rem;
+    }
+
+.cart--total>h3,h4{
+    font-weight: bold;
+}
+
+.cart__subtotal,.cart__total{
+    display: flex;
+    border: 1px solid var(--color-body);
+    justify-content: space-between;
+    width: 30%;
+    padding: 0 1rem;
+    
+
+}
+   
+.proceed--button{
+background-color: black;
+margin-left: 1rem;
+margin-top: 1rem;
+border-radius: 1px;
+color: white;
+font-weight: normal;
+font-size: 1.3rem;
+padding: .4rem 1rem;
+width: 15%;
+}
+
+.proceed--button:hover{
+    background: #303131;
+}

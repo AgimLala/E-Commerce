@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/checkout-styles.css" />
+  </head>
+  <body>
+    
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="nav first--navigation">
+        <p class="nav__description">free shipping for all orders of <b>$200</b> </p>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="#">My account</a></li>
+          <li class="nav__item"><a href="Cart.html"> Cart</a></li>
+          <li class="nav__item"><a href="Wishlist.html"> wishlist</a></li>
+          <li class="nav__item"><a href="checkout.html"> checkout</a></li>
+        </ul>
+      </nav>
+      <!-- User help -->
+      <div class="user--help">
+        <div class="media">
+          <div class="media__image"><img  src="images/icons/phone.png" alt=""></div>
+          <div class="media__body">
+            <h3>Need help?</h3>
+            <p>(+123) 123 321 345</p>
+          </div>
+        </div>
+        <div class="input-group search--input">
+          <input type="text" placeholder="Search Product">
+          <span class="icon"><img src="images/icons/refresh (5).png" alt=""></span>
+        </div>
+        <a href="#"><img class="small--icon" src="images/icons/heart.png" alt=""></a>
+        <a href="#"><img class="small--icon" src="images/icons/bag.png" alt=""></a>
+        <p>$54.00</p>
+      </div>
+      <!-- Page Navigator -->
+      <section class="page--navigator">
+      
+        <div class="media page--home">
+          <div class="media__image">
+            <img class="end--icon" src="images/icons/hamburger.png" alt="" />
+          </div>
+          <div class="page--home_body">
+            <h3>All Department</h3>
+          </div>
+        </div>
+        <ul class="page--menu">
+          <li class="page__links ">
+            <a  href="E-Commerce.html"
+              >HOME
+              <img
+                class="small--icon"
+                src="images/icons/arrow.downwards.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="page__links">
+            <a href="shop-left-sidebar.html"
+              >SHOP
+              <img
+                class="small--icon"
+                src="images/icons/arrow.downwards.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="page__links">
+            <a href="#"
+              >BLOG
+              <img
+                class="small--icon"
+                src="images/icons/arrow.downwards.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="page__links">
+            <a href="#"
+              >PAGES
+              <img
+                class="small--icon"
+                src="images/icons/arrow.downwards.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="page__links"><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="user--login">
+      <h3 ><a href="#">login</a></h3>
+      <p>or</p>
+      <h3><a href="">register</a></h3>
+      </div>
+      
+        </section>
+    </header>
+   
+    <div class="page--map">
+        <h4>Home > Checkout</h4>
+    </div>
+    
+    <div class="footer--media checkout--bar">
+      <img
+        class="small--icon checkout--bar_icon"
+        src="images/icons/Yellow-calendar.png"
+        alt=""
+      />
+      <a href="#">
+        <p>
+          Resturnig cotumer? Click here to login
+        </p>
+      </a>
+    </div>
+    <div class="footer--media checkout--bar">
+      <img
+        class="small--icon checkout--bar_icon"
+        src="images/icons/Yellow-calendar.png"
+        alt=""
+      />
+
+      <a href="#">
+        <p>
+         Have a coupon? Click here to enter your code
+        </p>
+      </a>
+    </div>
+
+    
+
+
+    <container class="checkout-grid">
+      <div class="checkout--form">
+          <h1>Billing Details</h1>
+          <label for="country">Country <span class="star-yellow"> * </span></label>
+          <select class="form--style country__select" id="country" aria-placeholder="Select your country">
+              <option selected>Select your country</option>
+              <option value="1">Albania</option>
+              <option value="2">Italy</option>
+              <option value="3">Germany</option>
+              <option value="4">Spain</option>
+              <option value="5">USA</option>
+          </select>
+          <div class="input-grid_2x1">
+              <div class="first__name">
+                  <label for="firstName">First Name *</label>
+                  <input class="form--style" type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="last_name">
+                  <label for="lastName">Last Name *</label>
+                  <input class="form--style" type="text" id="lastName" name="lastName" required>
+              </div>
+          </div>
+          <label for="companyName">Company Name</label>
+          <input class="form--style" type="text" id="companyName" name="companyName">
+          <label for="address">Address *</label>
+          <input class="form--style" type="text" id="address" name="address" placeholder="Street address" required>
+          <input class="form--style" type="text" id="address2" name="address2" placeholder="Apartment, suite, unit etc. (optional)">
+          <div class="input-grid_2x1">
+              <div>
+                  <label for="stateCounty">State / County *</label>
+                  <input class="form--style" type="text" id="stateCounty" name="stateCounty" required>
+              </div>
+              <div>
+                  <label for="postcodeZip">Postcode / Zip *</label>
+                  <input class="form--style" type="text" id="postcodeZip" name="postcodeZip" required>
+              </div>
+          </div>
+          <div class="input-grid_2x1">
+              <div>
+                  <label for="emailAddress">Email Address *</label>
+                  <input class="form--style" type="email" id="emailAddress" name="emailAddress" required>
+              </div>
+              <div>
+                  <label for="phone">Phone *</label>
+                  <input class="form--style" type="text" id="phone" name="phone" required>
+              </div>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">Create an account?</label>
+          </div>
+          <div class="second--title">
+              <h2>Ship to different address</h2>
+              <input type="checkbox">
+          </div>
+          <label for="exampleFormControlTextarea1" class="form-label">Order Notes</label>
+          <textarea class="order_notes" id="exampleFormControlTextarea1" cols="60" rows="3" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+      </div>
+      <div class="checkout--card">
+          <h3 class="checkout--card_header">Your Order</h3>
+          <table id="order-summary-table">
+              <thead>
+                  <tr class="table__header">
+                      <th>Product</th>
+                      <th>Total</th>
+                      <th></th>
+                  </tr>
+              </thead>
+              <tbody id="order-items-body">
+                
+              </tbody>
+          </table>
+          <div class="bank--transfer">
+              <h4>Direct Bank Transfer</h4>
+              <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+              <h4>Cheque Payment</h4>
+              <h4>PayPal</h4>
+          </div>
+          <div class="btn checkout--button">Place order</div>
+      </div>
+  </container>
+
+
+    <nav class="nav second--navigation">
+      <div class="nav__icon">
+        <img class="icon navigation__icon" src="images/icons/telegram.png" alt="">
+        <p class="nav__description"><b> Subscribe newsletter and get discount <b></p>
+      </div>
+      <div class="input--group">
+        <input type="text" class="input input__subscribe" placeholder="Enter Email Address" />
+        <button class="btn btn--accent btn--subscribe" >Subsrcibe</button>
+      </div>
+      
+      </nav>
+
+
+      <script src="Javascript/Checkout.js"></script>
+    
+
+  </body>
+
+ <footer>
+  
+  <section class="footer--grid">
+    <!-- CONTACT US -->
+  
+  <ul class="contact--us">
+  <h3>Contact us</h3>
+  <li class="home">
+  <div class="footer--media">
+  <div class="footer--media_image"><img class="small--icon " src="images/icons/home.png" alt=""></div>
+  <div class="footer--media_body">
+    <p>45 Grand Central New York NY</p>
+    <p>1017 United States USA</p>
+  </div>
+  </div>
+  </li>
+  <li class="email">
+  <div class="footer--media">
+  <div class="footer--media_image"><img class="small--icon " src="images/icons/email.png" alt=""></div>
+  <div class="footer--media_body">
+  <p>Email: info@yourdomain.com</p>
+  </div>
+  </div>
+  </li>
+  <li class="email">
+  <div class="footer--media">
+  <div class="footer--media_image"><img class="small--icon " src="images/icons/phone.black.png" alt=""></div>
+  <div class="footer--media_body">
+  <p>Phone: (+123) 123 321 345</p>
+  </div>
+  </div>
+  </li>
+  <li class="email">
+  <div class="footer--media">
+  <div class="footer--media_image"><img class="small--icon " src="images/icons/fax-machine.png" alt=""></div>
+  <div class="footer--media_body">
+  <p>Fax: (+321) 543 123 321 </p>
+  </div>
+  </div>
+  </li>
+  <li class="home">
+  <div class="footer--media">
+  <div class="footer--media_image"><img class="small--icon " src="images/icons/calendar.png" alt=""></div>
+  <div class="footer--media_body">
+  <p>Mon-Sat 9:00pm - 5:00pm.</p>
+  <p>Sun: Closed</p>
+  </div>
+  </div>
+  </li>
+  
+  
+  
+  </ul>
+  
+  <!-- Information & About Us -->
+  <ul class="footer--list">
+  <h3>Information</h3>
+  <li class="information__list"><a href="#">Contact Us</a></li>
+  <li class="information__list"><a href="#">About Us</a></li>
+  <li class="information__list"><a href="#">Privacy Policy</a></li>
+  <li class="information__list"><a href="#">Costumer Service</a></li>
+  <li class="information__list"><a href="#">Frequently questions</a></li>
+  <li class="information__list"><a href="#">Delivery Information</a></li>
+  </ul>
+  
+  <ul class="footer--list">
+  <h3>About Us</h3>
+  <li class="information__list"><a href="#">Cart</a></li>
+  <li class="information__list"><a href="#">Wishlist</a></li>
+  <li class="information__list"><a href="#">Checkout</a></li>
+  <li class="information__list"><a href="#">FAQ</a></li>
+  <li class="information__list"><a href="#">My account</a></li>
+  <li class="information__list"><a href="#">Privacy Policy</a></li>
+  </ul>
+  
+  
+  <!-- Latest tweet -->
+  <div class="footer--list latest--tweet">
+  <h3>Latest tweet</h3>
+  <p>Packed with ideas, inspiration, 
+    and just a few pictures of cute cats, it cant be hard to stand out in a sea of graphics 
+    on <a class="link__blue" href="#"> @Pinterest</a> . 
+    Which is why we're here to help with those awsome templates. 
+    <a class="link__blue" href="#"> enva.to/r6</a> </p>
+  <p>Sep 20 reply retweet favorite 1 years ago</p>
+  </div>
+  </section>
+  <div class="page--end">
+    <div class="copyright">
+       <p> Copyright &copy; 2019 All rights reserved</p>
+       <div class="footer--end_icon">
+         <img class="end--icon" src="images/icons/facebook.png" alt="">
+         <img class="end--icon" src="images/icons/twitter.png" alt="">
+         <img class="end--icon" src="images/icons/instagram.png" alt="">
+         <img class="end--icon" src="images/icons/linkedin.png" alt="">
+         <img class="end--icon" src="images/icons/signal.png" alt="">
+       </div>
+   </div>
+  
+     <div class="copyright footer--payment_images">
+       <p>Allow payments base on </p>
+       <img src="images/footer/payment/1.png" alt="">
+  
+    </div>
+  </div>
+</footer>
+
+ 
+  
+
+
+
+  
+
+</html>

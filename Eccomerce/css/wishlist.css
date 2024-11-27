@@ -1,0 +1,80 @@
+:root{
+    --color-primary: gold;
+    --color-secondary: red;
+    --color-accent: black;
+    --color-body: #ccc;
+    --border-radius: 30px;
+
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+table {
+    margin: 1rem;
+    border-collapse: collapse;
+    width: 98%;
+
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th:nth-child(1),
+  th:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(1),
+  td:nth-child(4),
+  td:nth-child(5) {
+    width: 10% ; /* First, fourth, and fifth column width */
+  }
+
+  th:nth-child(2),
+  th:last-child,
+  td:nth-child(2),
+  td:last-child {
+    width: 16%; /* Second and last column width */
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 25%; /* Third column width (the widest) */
+  }
+
+  th{
+    font-weight: normal;
+    height: 6rem;
+
+  }
+
+  .table__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    }
+
+    .wishlist--btn{
+        background: black;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        border-radius: 0;
+       margin: 0 1rem;
+        padding: 1rem 0;
+    }
+
+    .wishlist--btn:hover{
+        background: #303131;
+    }
+
+     .in--stock{
+        font-size: 1rem;
+        color: var(--color-primary);
+     }
+
+     .out--stock{
+        font-size: 1rem;
+        color: red;
+     }
